@@ -1,0 +1,22 @@
+server:
+    port: 8086
+
+logging:
+    level:
+        root: WARN
+        org:
+            springframework:
+                web: INFO
+                security: INFO
+
+spring:
+    session:
+        store-type: jdbc
+        jdbc:
+            initialize-schema: always
+    mvc:
+        static-path-pattern: /**
+
+afterImage:
+    resourceHandler: /after/**
+    location: D:/vc_image/
